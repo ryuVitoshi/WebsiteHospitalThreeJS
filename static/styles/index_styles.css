@@ -1,0 +1,431 @@
+:root {
+    --my-white: #FfFfFf;
+    --my-grey: #f6f6f6;
+    --my-dark_grey: #ddd;
+    --blue: #008dd2;
+    --light-blue: #76b8da;
+    --dark-blue: #0077c7;
+    --grey-blue: #3A4455;
+    --black-blue: #29303D;
+}
+
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('/static/fonts/AvenirNextCyr-Regular.woff2') format('woff2'),
+        url('/static/fonts/AvenirNextCyr-Regular.woff') format('woff'),
+        url('/static/fonts/AvenirNextCyr-Regular.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('/static/fonts/Manrope.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Avenir Next', sans-serif;
+    background-color: var(--my-white);
+}
+
+.left-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto 0 0;
+}
+
+.middle-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto 0 auto;
+}
+
+.right-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 0 auto;
+}
+
+/* -------------------- HEADER -------------------- */
+
+header {
+    display: block;
+    padding: 20px 0 20px 0;
+    background-color: var(--my-white);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto 0 auto;
+    max-width: 1140px;
+}
+
+header .logo img {
+    width: auto;
+    height: 90px;
+    padding-right: 18px;
+    border-style: solid;
+    border-color: var(--blue);
+    border-width: 0 2px 0 0;
+}
+
+header .logo h1 {
+    padding-left: 16px;
+    font-size: 15pt;
+}
+
+header .right-container div {
+    margin-right: 18px;
+    padding: 5px;
+    font-size: 14pt;
+    color: var(--blue);
+}
+
+header .right-container a {
+    text-decoration: none;
+    margin-right: 18px;
+    padding: 5px;
+    font-size: 14pt;
+    color: var(--grey-blue);
+}
+
+/* -------------------- NAVIGATION -------------------- */
+
+nav {
+    display: block;
+    padding: 0;
+    background-color: var(--my-grey);
+    position: sticky;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto 0 auto;
+    max-width: 1140px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    background-color: var(--my-grey);
+}
+
+nav a {
+    display: block;
+    padding: 26px 26px;
+    color: var(--grey-blue);
+    text-decoration: none;
+    font-size: 14pt;
+    transition: background-color 0.25s;
+}
+
+nav a:hover {
+    background-color: var(--my-dark_grey);
+}
+
+nav input[type="text"] {
+    padding: 5px;
+    margin-right: 12px;
+    padding-left: 20px;
+    height: 38px;
+    width: 280px;
+    font-size: 15pt;
+    border: none;
+    border-radius: 19px;
+    outline: none;
+    font-family: 'Manrope', sans-serif;
+}
+
+/* -------------------- BLOCK -------------------- */
+
+.block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12px auto 0 auto;
+    max-width: 1140px;
+    background: rgb(0,113,199);
+    /*background: linear-gradient(
+        90deg,
+        rgba(0,113,199,1) 0%,
+        rgba(233,233,249,1) 46%,
+        rgba(0,98,164,1) 100%
+    );*/
+    padding: 0px 14px 0px 30px;
+    border-radius: 26px;
+    background-image: url("/static/images/bg_block.jpg");
+}
+
+.info-container .left-container {
+    display: block;
+}
+
+.info-container .left-container h2 {
+    display: block;
+    font-size: 30pt;
+    color: var(--my-white);
+    font-family: 'Manrope';
+    margin-bottom: 44px;
+}
+
+.info-container .left-container p {
+    display: block;
+    font-family: 'Avenir Next';
+    color: var(--my-white);
+    margin-right: 16px;
+    font-size: 14pt;
+}
+
+.info-container .left-container a {
+    display: block;
+    font-family: 'Manrope';
+    background-color: var(--my-white);
+    text-decoration: none;
+    padding: 12px 26px;
+    font-size: 16pt;
+    width: 180px;
+    margin-top: 38px;
+    border-radius: 24px;
+    color: var(--black-blue);
+    margin-bottom: 46px;
+}
+
+.info-container img {
+    width: 1360px;
+    height: auto;
+    margin-left: 40px;
+    margin-right: 10px;
+    margin-top: 180px;
+}
+
+/* -------------------- SPEC -------------------- */
+
+.spec-container {
+    display: block;
+    margin: 0 auto 0 auto;
+    width: 1140px;
+    margin-top: 0px;
+}
+
+.spec {
+    margin: 20px 0;
+    display: block;
+}
+
+.spec h2 {
+    padding-bottom: 50px;
+    display: block;
+    font-size: 30pt;
+}
+
+.spec-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 12px;
+    grid-row-gap: 12px;
+}
+
+.spec-btn {
+    text-decoration: none;
+    background-color: var(--my-grey);
+    border-radius: 10px;
+    padding: 36px 0;
+    text-align: left;
+    transition: all 0.4s;
+    transition-timing-function: ease-out;
+    font-size: 19pt;
+    text-indent: 28px;
+    color: var(--black-blue);
+    background-position: 600px;
+    background-image: url("/static/images/bg_btn.png");
+    background-repeat: no-repeat;
+    background-size: 320%;
+}
+
+.spec-btn img {
+    width: 60px;
+    margin-bottom: 12px;
+}
+
+.spec-btn:hover {
+    /*background-color: var(--blue);*/
+    color: var(--my-white);
+    background-position: 0px;
+}
+
+/* -------------------- MODEL -------------------- */
+
+.model-container {
+    display: block;
+    margin: 0 auto 0 auto;
+    width: 1140px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.model-container h2 {
+    padding-bottom: 40px;
+    display: block;
+    font-size: 30pt;
+}
+
+.model {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12px auto 0 auto;
+    max-width: 1140px;
+    background: rgb(0,113,199);
+    /*background: linear-gradient(
+        90deg,
+        rgba(0,113,199,1) 0%,
+        rgba(233,233,249,1) 46%,
+        rgba(0,98,164,1) 100%
+    );*/
+    padding: 0px 14px 0px 30px;
+    border-radius: 26px;
+    background-image: url("/static/images/bg_block.jpg");
+}
+
+.model-container .left-container {
+    display: block;
+}
+
+.model-container .left-container p {
+    display: block;
+    font-family: 'Avenir Next';
+    color: var(--my-white);
+    font-size: 16pt;
+    padding-top: 30px;
+    margin-right: 16px;
+    margin-top: 12px;
+    margin-bottom: 32px;
+}
+
+.model-container .left-container a {
+    display: block;
+    font-family: 'Manrope';
+    background-color: var(--my-white);
+    text-decoration: none;
+    padding: 12px 26px;
+    font-size: 16pt;
+    width: 300px;
+    margin-top: 38px;
+    border-radius: 24px;
+    color: var(--black-blue);
+    margin-bottom: 46px;
+    transition: all 0.25s;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.model-container .left-container a:hover {
+    background-color: var(--black-blue);
+    color: var(--my-white);
+}
+
+.model-container img {
+    width: 480px;
+    height: auto;
+    margin-left: 16px;
+    margin-right: 10px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+/* -------------------- FOOTER -------------------- */
+
+footer {
+    display: block;
+    padding: 16px 0 16px 0;
+    margin: 0;
+    background-color: var(--my-grey);
+}
+
+.footer-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto 0 auto;
+    max-width: 1140px;
+}
+
+footer .logo img {
+    width: 150px;
+    height: auto;
+}
+
+footer .left-container {
+    margin-right: 80px;
+}
+
+footer .middle-container {
+    margin-left: 120px;
+}
+
+footer .right-container {
+    margin-right: 40px;
+}
+
+.footer-column {
+    margin-bottom: 20px;
+}
+
+.footer-block ul {
+    list-style-type: none;
+}
+
+.footer-block ul li {
+    margin-bottom: 14px;
+}
+
+.mainli {
+    color: var(--black-blue);
+    font-size: 17pt;
+}
+
+.footer-block .middle-container {
+    margin-right: 50px;
+}
+
+.footer-block ul li a {
+    text-decoration: none;
+    color: var(--grey-blue);
+    font-size: 14pt;
+}
+
+.hotline {
+    font-weight: bold;
+}
+
+.address, .email {
+    font-size: 14px;
+}
+
+.copyright {
+    margin-top: 20px;
+    margin-left: 80px;
+}

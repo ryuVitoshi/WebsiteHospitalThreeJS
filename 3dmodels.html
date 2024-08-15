@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>3D Model</title>
+		<script type="module" src="/scripts/3dmodel.js"></script>
+		<link rel="stylesheet" href="static/styles/3dmodels_styles.css">
+	</head>
+	<body>
+		<div id="menu">
+			<div id="menu-wrap">
+				<div id="menu-1">
+					<div class="element">
+						<div class="left">
+							<img src="/static/images/image1.png">
+							<div>Поверхи</div>
+						</div>
+						<div class="right">
+							<div id="firstFloorBttn" class="bttn">1</div>
+							<div id="secondFloorBttn" class="bttn">2</div>
+						</div>
+					</div>
+					<div class="element">
+						<div class="left">
+							<img src="/static/images/image2.png">
+							<div>Вогнегасники</div>
+						</div>
+						<div class="right">
+							<input type="checkbox" id="fireCheckBox">
+						</div>
+					</div>
+					<div class="element">
+						<div class="left">
+							<img src="/static/images/image3.png">
+							<div>Телефони</div>
+						</div>
+						<div class="right">
+							<input type="checkbox" id="phoneCheckBox">
+						</div>
+					</div>
+					<div class="element">
+						<div class="left">
+							<img src="/static/images/image4.png">
+							<div>Кабінети</div>
+						</div>
+						<div class="right">
+							<input type="checkbox" id="roomCheckBox">
+						</div>
+					</div>
+					<div class="element">
+						<div class="left">
+							<img src="/static/images/image7.png">
+							<div>План евакуації</div>
+						</div>
+						<div class="right">
+							<input type="checkbox" id="navCheckBox">
+						</div>
+					</div>
+				</div>
+				<div id="menu-2">
+					<div class="element">
+						<div>Де ви зараз знаходитесь:</div>
+					</div>
+					<div class="element">
+						<div class="left" class="input">
+							<img src="/static/images/image5.png">
+							<div class="custom">
+
+								<details class="custom-select">
+									<summary class="radios" id="optionMenu1">
+									</summary>
+									<ul class="list" id="optionMenu11">
+									</ul>
+								</details>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="menu-3">
+					<div class="element">
+						<div>Виберіть бажаний кабінет:</div>
+					</div>
+					<div class="element">
+						<div class="left" class="input">
+							<img src="/static/images/image6.png">
+
+							<div class="custom">
+								<details class="custom-select">
+									<summary class="radios1" id="optionMenu2">
+									</summary>
+									<ul class="list" id="optionMenu22">
+									</ul>
+								</details>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div id="menu-4">
+					<button id="sendButton">Знайти маршрут</button>
+					<button id="sendButton1">Приховати</button>
+				</div>
+			</div>
+		</div>
+		<div id="threejs"></div>
+	</body>
+
+	<img id="legend" class="hidden" src="/static/images/legend.png">
+
+	<div class="delete">
+		<div class="loading">
+			<div class="ring">Завантаження
+				<span></span>
+			</div>
+		</div>
+	</div>
+
+</html>
