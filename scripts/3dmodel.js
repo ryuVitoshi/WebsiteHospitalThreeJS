@@ -575,11 +575,11 @@ function drawPath(path, length) {
     modelPath = new THREE.Mesh(geometry, material);
 
     //geometry = new THREE.BufferGeometry().setFromPoints(smoothPath);
-    geometry = new THREE.TubeGeometry(curve, 8000, 0.02, 10, false);
+    geometry = new THREE.TubeGeometry(curve, 8000, 0.1, 10, false);
     modelPath = new THREE.Mesh(geometry, material);
 
     window.scene.add(modelPath);
-    //animatePath(points);
+    animatePath(points);
 }
 
 /* -------------------- PATH ANIMATION --------------------*/
@@ -1198,9 +1198,6 @@ function animate() {
     requestAnimationFrame(animate);
     controls.update();
     TWEEN.update();
-    toggleModel(models['floor1'], false);
-    toggleModel(models['floor2'], false);
-    controls.minDistance = 0;
     window.renderer.render(window.scene, window.camera);
 }
 animate();
